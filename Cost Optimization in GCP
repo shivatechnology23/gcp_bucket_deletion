@@ -1,0 +1,44 @@
+Actionable Steps for Cost Optimization in GCP:
+
+1.Analyze GCP Billing Reports:
+
+Use the GCP Billing Dashboard to understand your spending patterns. Enable billing export to BigQuery for granular analysis.
+Look at monthly trends, identify cost spikes, and check which services are consuming the most resources.
+
+2.Leverage Committed Use Contracts (CUCs):
+
+Evaluate your compute workloads to determine if committed use discounts make sense. You can save up to 57% by committing to usage over one or three years.
+
+3. Rightsize Compute Resources:
+
+Use the Google Cloud Recommender to automatically identify over-provisioned resources (e.g., VMs, memory, CPU, storage) and adjust them accordingly.
+
+4. Use Preemptible VMs:
+
+For non-critical workloads like batch processing or fault-tolerant applications, preemptible VMs can save you up to 80%.
+
+5. Optimize Storage Costs:
+
+Move infrequently accessed data to cheaper storage classes (Coldline or Archive) or use lifecycle management policies.
+Delete or archive unused snapshots and backups.
+
+6. Use Autoscaling and Serverless:
+
+Take advantage of autoscaling for workloads with variable demand and explore serverless options (Cloud Functions, Cloud Run) to avoid over-provisioning.
+
+7. Monitor and Set Budgets/Alerts:
+
+Set up billing alerts to notify you when you exceed thresholds. Also, use quotas to prevent unintentional cost overages.
+
+8. Optimize Networking Costs:
+
+Review egress traffic to reduce cross-region networking charges by placing resources in the same region.
+Use Cloud CDN for content delivery optimization.
+
+9. Review Third-Party Services:
+
+Evaluate the use of third-party services and ensure they are necessary, as some integrations can add to your GCP bill unnecessarily.
+
+10. Use BigQuery Reservations:
+
+For large data processing tasks in BigQuery, consider purchasing BigQuery flat-rate pricing and assign capacity based on demand.
