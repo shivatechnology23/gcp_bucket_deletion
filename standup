@@ -1,0 +1,5 @@
+1. Today I worked on cost optimisation where I started analyzing the billing patterns for resources in GCP for last 90 days
+-Based on my findings there are certain resources where I need to investigate the behaviour of applications running in UAT environment.
+
+2. Today I went to confluence and started creating notes on our existing infrastructure.
+-Based on those notes I can suggest some strategies to improve our infrastructure.
