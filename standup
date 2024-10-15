@@ -3,3 +3,15 @@
 
 2. Today I went to confluence and started creating notes on our existing infrastructure.
 -Based on those notes I can suggest some strategies to improve our infrastructure.
+
+---------------------------------------------------------------------------------
+
+Meeting Notes:
+
+1. So far I am working bucket object deletion. One of the bucket objects has been deleted and second bucket process has been initialed.
+2. On cost optimization task. Last week I have analyzed the compute engines workloads for anomalies and any changes.
+Same I did for composer based clusters where multiple nodes are bearing the workloads. Now to get more in depth knowledge on this. 
+I have tried scheduling a meeting with Liang but he's on vacation. So now for this week I am going to have meeting with Satish and Linlin on the same matter.
+Once I will get a better understandin of workloads in the UAT environment then I can create a report on cost optimization strategies what we can implement.
+3. Apart from this Last week I had few meeting with Yihan to resolve the session timeout error. 
+So far the load test looks fine the session timeout error occurance has been significantly reduced. But still satish and team are still performing some load tests to be sure.
