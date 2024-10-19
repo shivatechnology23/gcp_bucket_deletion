@@ -43,3 +43,15 @@ Compute Engine:
 1. So far I have Identified few VMs which are not in use and are in Idle state. So we can remove them.
 2. Along with that few VMs are not working on high load task. So for those we can down grade there configurations.
 3. Mostly VMs what I found are basically nodes for GKE cluster. So I need to investigate there configuration and behaviour furthermore.
+
+
+-----------------------------------------------------------------------------------------------
+
+2024-10-18
+
+1.Today I have worked on composer2 workload setup and deployment with Liang and team.
+  -I have updated multiple secret entries for DAG processes to run.
+  -I have updated connection configuration for certain SQL servers for concurrent connection.
+  -I have updated performance configurations (CPU, Memory) for certain SQL servers for better worload handling.
+
+2.Today I also worked on cloud log analysis to find out potential logs which we can omette from Cloud logger.
