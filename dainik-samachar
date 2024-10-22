@@ -55,3 +55,23 @@ Compute Engine:
   -I have updated performance configurations (CPU, Memory) for certain SQL servers for better worload handling.
 
 2.Today I also worked on cloud log analysis to find out potential logs which we can omette from Cloud logger.
+
+-----------------------------------------------------------------------------------------------
+
+2024-10-21
+
+1. Today I have colaborated with Sathish and Conor to resolve the error log issue.
+  - We have identified the python package which was resposible for the unnecessary error log generation.
+  - Conor was the package manager so he update the logging configurations of the package.
+  - This will directly affect the daily error log generation process in Cloud logger.
+  - Now we are planning to test it in UAT and DEV environment soon.
+
+2. Today I have completed the first phase of "GCP Cost Optimisation Report"
+  - I have included all 4 major services which were resposible for moajority of cost consumption since last few months.
+  - Those are GCP Cloud Composer2, Compute, Storage and Logger.
+  - I have included 4 sections for each service in the report.
+  - Section:
+    - Current Status
+    - Action Plan
+    - Progress
+    - Recommendations
