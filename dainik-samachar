@@ -75,3 +75,18 @@ Compute Engine:
     - Action Plan
     - Progress
     - Recommendations
+
+-----------------------------------------------------------------------------------------------------
+
+
+2024-10-23
+
+1. Initiated working on resource labeling in GCP for all d3-ihub (dev/uat/prod) as well as intuative-hipaavault (dev/uat/prod) environments.
+  - First we are going to identify the respective terraform code for each resource and then start labeling process via terraform.
+2. Initiated the research for Zoom connector setup in our GCP on premises environment.
+  - Creating a list of resources and there components which are going to utilize in this process.
+3. Worked on ticket CAIN-8984 requested by Sathish.
+  - Updated the terraform code to add SSH level access for accounts in Prod environment.
+4. Worked on ticket CAIN-8985 requested by Sathish.
+  - Upgraded the composer2 configuration for CPU utilization (Worker and Scheduler) through GCP console.
+  - Tested the configuration by running multiple DAGS in composer2 and monitored it.
