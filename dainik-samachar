@@ -79,7 +79,7 @@ Compute Engine:
 -----------------------------------------------------------------------------------------------------
 
 
-2024-10-23
+2024-10-22
 
 1. Initiated working on resource labeling in GCP for all d3-ihub (dev/uat/prod) as well as intuative-hipaavault (dev/uat/prod) environments.
   - First we are going to identify the respective terraform code for each resource and then start labeling process via terraform.
@@ -90,3 +90,17 @@ Compute Engine:
 4. Worked on ticket CAIN-8985 requested by Sathish.
   - Upgraded the composer2 configuration for CPU utilization (Worker and Scheduler) through GCP console.
   - Tested the configuration by running multiple DAGS in composer2 and monitored it.
+
+
+------------------------------------------------------------------------------------------------------
+
+2024-10-23
+
+1. Identified the core terraform code for resource labeling ticket CAIN-8951.
+  - Had a discussion with Liang on execution plan.
+  - Create the list of resources targeted for labeling.
+  - Initiating the labeling in d3-ihub environment from 23rd Oct.
+2. Initiated work on ticket CAIN-8995 requested Sathish.
+3. Initated working on ticket CAIN-8992 Case Insight GKE monitoring - accessing control.
+  - Standardizing terraform CI/CD for dataflow job.
+  - Using seperate service account for dataflow and datadog
