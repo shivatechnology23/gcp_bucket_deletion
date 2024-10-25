@@ -121,3 +121,8 @@ Compute Engine:
     - Compute: d3-shared-vm
   - Continuing labeling process for other resources.
 - Completed ticket CAIN-8995 to add new branches (develop and master) in multiple repositories.
+
+-----------------------------------------------------------------------------------------------------------
+
+
+https://bgiri-gcloud.medium.com/how-to-set-up-terraform-on-your-local-laptop-to-connect-with-google-cloud-625ec98c15c4
