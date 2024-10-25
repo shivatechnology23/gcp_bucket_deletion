@@ -104,3 +104,20 @@ Compute Engine:
 3. Initated working on ticket CAIN-8992 Case Insight GKE monitoring - accessing control.
   - Standardizing terraform CI/CD for dataflow job.
   - Using seperate service account for dataflow and datadog
+
+
+------------------------------------------------------------------------------------------------------
+
+
+2024-10-24
+
+- Worked on ticket CAIN-8951.
+  - Started labeling in d3-ihub and d3-shared environments.
+  - Completed resources in d3-ihub:
+    - Compute: ihub-dev-vm
+    - Database: ihub-database
+    - GKE: ihub-gke-cluster
+  - Completed resources in d3-shared:
+    - Compute: d3-shared-vm
+  - Continuing labeling process for other resources.
+- Completed ticket CAIN-8995 to add new branches (develop and master) in multiple repositories.
