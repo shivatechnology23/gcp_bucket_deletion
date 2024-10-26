@@ -124,5 +124,17 @@ Compute Engine:
 
 -----------------------------------------------------------------------------------------------------------
 
-
 https://bgiri-gcloud.medium.com/how-to-set-up-terraform-on-your-local-laptop-to-connect-with-google-cloud-625ec98c15c4
+
+-----------------------------------------------------------------------------------------------------------
+
+25-10-24
+
+- Continued working on ticket CAIN-8951.
+  - Implement labeling on new resources.
+  - Fixed some existing terraform code on label allocation.
+- Initated working on ticket CAIN-8992 Case Insight GKE monitoring - accessing control.
+  - In research phase for resource allocation for Dataflow jobs.
+  - Creating a sample TF template to create and deploy dataflow job. 
+  - Standardizing terraform CI/CD for dataflow job.
+  - Implementing seperate service account for dataflow and datadog.
