@@ -128,7 +128,7 @@ https://bgiri-gcloud.medium.com/how-to-set-up-terraform-on-your-local-laptop-to-
 
 -----------------------------------------------------------------------------------------------------------
 
-25-10-24
+2024-10-25
 
 - Continued working on ticket CAIN-8951.
   - Implement labeling on new resources.
@@ -138,3 +138,11 @@ https://bgiri-gcloud.medium.com/how-to-set-up-terraform-on-your-local-laptop-to-
   - Creating a sample TF template to create and deploy dataflow job. 
   - Standardizing terraform CI/CD for dataflow job.
   - Implementing seperate service account for dataflow and datadog.
+
+------------------------------------------------------------------------------------------------------------
+
+2024-10-28
+
+- Colaborated with Nauman and Ashish for dataflow job deployment task via Terraform.
+- Updated Terraform code for ihub-gke-cluster to add label for resource.
+- Updated and ran pipeline for deploy CI DAG changes to QA Composer2.
