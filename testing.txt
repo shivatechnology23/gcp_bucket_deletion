@@ -1,0 +1,37 @@
+resource "google_storage_bucket_iam_member" "bucket_reader_writer" {
+  bucket = google_storage_bucket.temp_files_bucket.name
+  role   = "roles/storage.objectAdmin"
+  member = "serviceAccount:${google_service_account.dataflow_datadog_export_sa.email}"
+}
+
+
+----------------------------------------------------------------------------------------
+
+resource "google_project_iam_custom_role" "pubsub_role" {
+  role_id     = "pubsubRWRole"
+  title       = "Pub/Sub Read and Write Role"
+  description = "Custom role for read and write access to Pub/Sub"
+  permissions = [
+    "pubsub.subscriptions.consume",
+    "pubsub.subscriptions.create",
+    "pubsub.subscriptions.delete",
+    "pubsub.subscriptions.get",
+    "pubsub.subscriptions.list",
+    "pubsub.subscriptions.update",
+    "pubsub.topics.attachSubscription",
+    "pubsub.topics.create",
+    "pubsub.topics.delete",
+    "pubsub.topics.get",
+    "pubsub.topics.list",
+    "pubsub.topics.publish",
+    "pubsub.topics.update"
+  ]
+  project = local.project_id
+}
+
+
+resource "google_project_iam_member" "pubsub_binding" {
+  project = local.project_id
+  role    = google_project_iam_custom_role.pubsub_role.name
+  member  = "serviceAccount:${google_service_account.dataflow_datadog_export_sa.email}"
+}
