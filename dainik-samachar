@@ -161,3 +161,16 @@ Compute Engine:
 - Added labels for most of the resources in TF-Dataflow-Datadog repository for both Dev and UAT environment.
   Labels: Project, Region, Environment, Created_by, Managed_by and Resource_owner.
 
+--------------------------------------------------------------------------------------
+
+2024-10-30
+
+- Initiated working on TF-Dataflow-Datadog dev deployment.
+  - Currently resolving issue related to datadog API value.
+    Link:
+- Reviewing the root cause behind cloud logger abnormal error log generation.
+  - These are the major services which are contributing for error log generation in production environment
+    - GKE cluster daemon
+    - Cilium agent
+    - Fluent
+- Initiated working on Redis memory store in cnetral-us region in intuitive-uat-hipaavault account.
